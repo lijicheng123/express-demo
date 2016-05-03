@@ -1,0 +1,18 @@
+<h1>我在测试post请求</h1>
+<p>{{data}}</p>
+<script src="/js/jquery.js"></script>
+<script>
+	$(function () {
+		$.ajax({
+			url:'/weixin/submit/content',
+			type:'post',
+			data:{
+				content:'我是Ajax post过来的呦~'
+			},
+			success:function (data) {
+				console.log(data);
+			}
+
+		})
+	})
+</script>
